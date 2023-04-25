@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    h3 {
+      margin-left: 10px;
+    }
+
+    li {
+      list-style: none;
+      font-size: 20px;
+    }
+  </style>
+  <script src="./scrippt.js"></script>
+  <title>Escalação de time</title>
+  
+</head>
+<body>
+  <h1>Escalação de time</h1>
+
+  <label for="nome" class="labels">Informe o nome do jogador: </label>
+  <input type="text" name="nome" id="nome" class="inputs" autofocus autocomplete="of">
+  <br><br>
+
+  <label for="posicao" class="labels">Informe a posição do jogador: </label>
+  <input type="text" name="posicao" id="posicao" class="inputs" autocomplete="of">
+  <br><br>
+
+  <label for="numero" class="labels">Informe o número do jogador: </label>
+  <input type="text" name="numero" id="numero" class="inputs" autocomplete="of">
+  <br><br>
+
+  <button id="escalar" onclick="escalarJogador()">Escalar jogador</button>
+
+  <br><br><hr>
+
+  <h1>Remover jogador</h1>
+
+  <label for="numero-remover" class="labels">Informe o número do jogador: </label>
+  <input type="text" name="numero-remover" id="numero-remover" class="inputs">
+  <br><br>
+
+  <button id="remover" onclick="removerJogador()">Remover jogador</button>
+  <br><br><hr>
+
+  <section id="lista">
+    <h3 id="escalacao"></h3>    
+  </section>
+  
+</body>
+</html>
